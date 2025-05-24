@@ -1,0 +1,47 @@
+.cards-wrapper {
+    margin-top: -7rem;
+    z-index: 5;
+    h1{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .category-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .category-card {
+        background-color: white;
+        box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 15rem;
+        height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        margin-top: 0;
+
+        &:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+    }
+
+    .category-cards-error {
+        color: red;
+        text-align: center;
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+}
